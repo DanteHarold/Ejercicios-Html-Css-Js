@@ -1,0 +1,64 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    font-family: sans-serif;
+    background-color: #204862;
+}
+h1{
+    text-align: center;
+    color: whitesmoke;
+}
+.form-register{
+    border: 1px solid red;
+    width: 95%;
+    max-width: 500px;
+    margin: auto;
+    background: white;
+    border-radius: 15px;
+}
+.form-title{
+    background: deepskyblue;
+    color: whitesmoke;
+    padding: 20px;
+    text-align: center;
+    margin-top: 0;
+    font-weight: 100;
+    font-size: 30px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-bottom: 5px solid crimson;
+}
+.container-inputs{
+    padding: 10px 30px;
+    display: flex;
+    /* COntenido que no entre se deslize hacia abajo */
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+input{
+    margin-bottom: 15px;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 2px solid darkgray;
+}
+.input-50{
+    width: 48%;
+}
+.input-100{
+    width: 100%;
+}
+.btn-enviar{
+    background-color: crimson;
+    color: white;
+    margin: auto;
+    padding: 10px 48px;
+    cursor: pointer;
+    transition: 1s;
+    font-size: 18px;
+}
+.btn-enviar:active{
+    transform: scale(1.10);
+}
