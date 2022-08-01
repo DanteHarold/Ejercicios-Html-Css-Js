@@ -1,0 +1,61 @@
+body{
+    margin: 0;
+    height: 100vh;
+    /* cursor: url("spinning-circles.svg") , auto; */
+    background-color: rgb(35, 35, 35);
+}
+.cursor{
+    width: 30px;
+    height: 30px;
+    border: 1px solid white;
+    border-radius: 50%;
+    position: absolute;
+    transition-duration: .2s;
+    transition-timing-function: ease-out;
+    animation: cursor .7s infinite alternate
+} 
+.cursor::after{
+    content: "";
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    border: 8px solid gray;
+    border-radius: 50%;
+    opacity: .5;
+    top: -8px;
+    left: -8px;
+    animation: cursor2 .7s infinite alternate;
+}
+@keyframes cursor {
+    from{
+        transform: scale(1.4);
+    }
+    to{
+        transform: scale(.7);
+    }
+}
+@keyframes cursor2 {
+    from{
+        transform: scale(1.4);
+    }
+    to{
+        transform: scale(.4);
+    }
+}
+
+.expand{
+    animation: cursor3 .5s forwards;
+    border: 1px solid red;
+}
+@keyframes cursor3 {
+    0%{
+        transform: scale(1.4);
+    }
+    50%{
+        transform: scale(3.4);
+    }
+    100%{
+        transform: scale(1);
+        opacity: 0;
+    }
+}
